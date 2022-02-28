@@ -3,11 +3,12 @@ kind: Workload
 metadata:
   name: tanzu-python-flask-web-app
   labels:
-    apps.tanzu.vmware.com/workload-type: web
+    apps.tanzu.vmware.com/workload-type: python-web
     app.kubernetes.io/part-of: tanzu-python-flask-web-app
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   source:
     git:
-      url: https://git@github.com:zCHIP/github.com:zCHIP/tap-python-flask-app
+      url: https://github.com/zCHIP/tap-python-flask-app
       ref:
         branch: master
